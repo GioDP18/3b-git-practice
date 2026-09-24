@@ -1,3 +1,4 @@
 fname = "Juan"
+lname = "De la Cruz"
 
-print(fname)
+print(fname + " " + lname)
