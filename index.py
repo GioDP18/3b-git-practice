@@ -1,0 +1,3 @@
+fname = "Juan"
+
+print(fname)
