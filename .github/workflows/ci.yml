@@ -1,0 +1,28 @@
+name: CI Syntax Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkoutrepository
+      uses: actions/checkout@v4
+
+    - name: Setup python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - name: Check Python Syntax
+      run: python -m compileall -q .
+
+    - name: Run application
+      run: python index.py
