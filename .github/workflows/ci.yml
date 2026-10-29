@@ -11,17 +11,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Check out repository
-      uses: actions/checkout@v4
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-    - name: Setup python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.x"
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-    - name: Check Python Syntax
-      run: python -m compileall -q .
+      - name: Check Python Syntax
+        run: python -m compileall -q .
 
-    - name: Run application
-      run: python index.py
+      - name: Run application
+        run: python index.py
