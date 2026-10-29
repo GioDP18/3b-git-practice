@@ -2,4 +2,4 @@ fname = "Juan"
 mname = "Avilla"
 lname = "De la Cruz"
 
-print(fname + " " + mname + " " + lnames)
+print(fname + " " + mname + " " + lname)
